@@ -7,7 +7,10 @@
 
 ```bash
 $ python script.py -h
- 
+```
+
+Output:
+```bash
 usage: script.py [-h] [-l AUTOMATION_LEVEL] [-f FILE_PATH] [-a ARGUMENTS]
                  [-m MAXIMUM_NUM_OF_STRING_UNIQUE_VALUES]
 
@@ -51,6 +54,6 @@ you can install dependences using pip:
 pip install numpy pandas inspect argparse  matplotlib seaborn
 ```
 
-## examples
+## Examples
 You can see examples from `final_plots.ipynb` file.
 
