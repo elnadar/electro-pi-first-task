@@ -10,7 +10,7 @@ $ python script.py -h
 ```
 
 Output:
-```bash
+```text
 usage: script.py [-h] [-l AUTOMATION_LEVEL] [-f FILE_PATH] [-a ARGUMENTS]
                  [-m MAXIMUM_NUM_OF_STRING_UNIQUE_VALUES]
 
