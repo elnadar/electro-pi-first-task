@@ -1,6 +1,5 @@
-# libs for working with data and model
+# libs for working with data
 import numpy as np
-from scipy import stats
 import pandas as pd
 import inspect 
 import argparse
