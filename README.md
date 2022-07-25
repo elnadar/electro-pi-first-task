@@ -1,5 +1,5 @@
 ## Project Description
-- Python Script that would take any type of data as an input whether (.csv or .xlsx) that hold data with different type of errors that need to be corrected first then return an automated Exploratory Data Analysis Charts as an output.
+- Python Script that would take any type of data as an input whether (.csv or .xlsx) that return an automated Exploratory Data Analysis Charts as an output.
 - Sample Input : "data.xlsx"
 - Desired Output: EDA for that data
 
