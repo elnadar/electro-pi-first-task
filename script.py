@@ -1,5 +1,6 @@
-# libs for working with data
+# libs for working with data and model
 import numpy as np
+from scipy import stats
 import pandas as pd
 import inspect 
 import argparse
@@ -36,8 +37,10 @@ args = vars(ap.parse_args())
 
 automation_level_valid = ['full', 'high', 'semi', 'low', 'none']
 
-if args['file-path'] == '':
+if args['file_path'] == '':
     user_input_path = input("[REQUIRED] Please Enter data file path: ")
+else:
+    user_input_path = args['file_path']
 
 
 # user_input_path = './data/fatal-police-shootings-data.xlsx'
@@ -66,11 +69,11 @@ for param, value in params.items():
     else:
         break
 
-if args['automation-level'] == 'high' and args['arguments'] != '':
+if args['automation_level'] == 'high' and args['arguments'] != '':
     user_input_params = dict(map(lambda x: x.strip().split('='),
                                 args['arguments'].split(',')))
     
-elif args['automation-level'] == 'high' and args['arguments'] == '':
+elif args['automation_level'] == 'high' and args['arguments'] == '':
     user_instruction = input('[REQUIRED] Please Enter your specified arguments\nIF you need arguments names and values you can write h or help\n[INPUT]: ')
     if user_instruction.lower in ['h', 'help']:
         for key, value in params.items():
